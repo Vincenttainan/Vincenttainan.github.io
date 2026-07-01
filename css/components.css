@@ -13,7 +13,8 @@
     content: "";
     position: absolute;
     inset: 0;
-    
+
+    background-color: #1f2937;
     opacity: 0;
 
     transition: opacity 0.8s ease;
