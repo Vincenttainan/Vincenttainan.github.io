@@ -20,3 +20,35 @@ function toggleTheme() {
         });
     }
 }
+
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+
+    modal.classList.add("show");
+    document.body.classList.add("modal-open");
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+
+    modal.classList.remove("show");
+    document.body.classList.remove("modal-open");
+}
+
+document.addEventListener("click", function(event) {
+    if (event.target.classList.contains("modal")) {
+        event.target.classList.remove("show");
+        document.body.classList.remove("modal-open");
+    }
+});
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        const openModal = document.querySelector(".modal.show");
+
+        if (openModal) {
+            openModal.classList.remove("show");
+            document.body.classList.remove("modal-open");
+        }
+    }
+});

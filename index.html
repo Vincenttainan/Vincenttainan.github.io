@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/footer.css">
     
     <link rel="preload" href="css/theme_w.css" as="style">
@@ -21,6 +22,7 @@
             <a href="#about">關於我</a>
             <a href="#skills">技能</a>
             <a href="#works">作品</a>
+            <a href="#learning">學習中</a>
             <a href="#contact">連結</a>
             <div class="theme-switch-wrapper">
                 <span class="theme-icon-day">☀︎</span>
@@ -108,30 +110,73 @@
             <h2>作品 / 經歷</h2>
 
             <div class="work">
-                <h3>
-                    <a href="https://github.com/Vincenttainan/ProgramNote" target="_blank">
+                <h3 class="work-title">
+                    <a href="javascript:void(0)" onclick="openModal('programNoteModal')">
                         程式筆記：語法、解題紀錄
                     </a>
+
+                    <span class="status status-updating">持續更新</span>
                 </h3>
+
                 <p>
-                    語法包含 : C++, Python, Java, Assembly<br>
-                    題解包含 : LeetCode, Toj
+                    這是我用來整理程式學習過程的筆記，包含語法、觀念整理與解題紀錄
                 </p>
+
+                <div class="tag-container">
+                    <span class="tag">C++</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Assembly</span>
+                    <span class="tag">Notes</span>
+                    <span class="tag">Solutions</span>
+                </div>
             </div>
+            
             <div class="work">
-                <h3>
-                    <a href="https://github.com/Vincenttainan/NCU_assemblyProject" target="_blank">
+                <h3 class="work-title">
+                    <a href="javascript:void(0)" onclick="openModal('fishingGameModal')">
                         組合語言專案 The Fishing Game
                     </a>
+
+                    <span class="status status-done">已完成</span>
                 </h3>
+
                 <p>
-                    使用 Assembly, Irvine32 的文字介面小遊戲<br>
-                    模仿 stardew valley 的釣魚機制
+                    使用 Assembly 與 Irvine32 製作的文字介面小遊戲，模仿 Stardew Valley 的釣魚機制
                 </p>
+
+                <div class="tag-container">
+                    <span class="tag">Assembly</span>
+                    <span class="tag">Irvine32</span>
+                    <span class="tag">Project</span>
+                    <span class="tag">Game</span>
+                    <span class="tag">Console UI</span>
+                </div>
             </div>
 
         </section>
         
+        <section id="learning" class="section">
+            <h2>目前學習中</h2>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>前端網頁開發</h3>
+                    <p>持續練習 HTML、CSS、JS 與響應式排版</p>
+                </div>
+
+                <div class="card">
+                    <h3>資料結構與演算法</h3>
+                    <p>透過解題練習加強資料結構與演算法觀念</p>
+                </div>
+
+                <div class="card">
+                    <h3>Python / AI</h3>
+                    <p>準備將 Python 應用在專題與資料處理相關任務</p>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="section">
             <h2>連結</h2>
 
@@ -146,6 +191,86 @@
             </div>
         </section>
     </main>
+
+    <div id="programNoteModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('programNoteModal')">
+                X
+            </button>
+
+            <h2 class="work-title">
+                程式筆記：語法、解題紀錄
+
+                <span class="status status-updating">持續更新</span>
+            </h2>
+
+            <p>
+                這是我整理程式學習過程的筆記專案，內容包含常用語法、
+                觀念整理與解題紀錄。主要用來記錄自己在 C++、Python、
+                Java 與 Assembly 學習過程中遇到的語法、觀念和題目練習。
+            </p>
+
+            <p>
+                解題紀錄部分包含 LeetCode、TOJ 等平台的練習題，
+                透過筆記整理加深自己對資料結構、演算法與程式語法的理解。
+            </p>
+
+            <div class="tag-container">
+                <span class="tag">C++</span>
+                <span class="tag">Python</span>
+                <span class="tag">Java</span>
+                <span class="tag">Assembly</span>
+                <span class="tag">LeetCode</span>
+                <span class="tag">TOJ</span>
+            </div>
+            
+            <div class="modal-link-container">
+                <a href="https://github.com/Vincenttainan/ProgramNote" target="_blank" class="modal-link">
+                    查看 GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="fishingGameModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('fishingGameModal')">
+                X
+            </button>
+
+            <h2 class="work-title">
+                組合語言專案 The Fishing Game
+
+                <span class="status status-done">已完成</span>
+            </h2>
+
+            <p>
+                The Fishing Game 是使用 Assembly Language 與 Irvine32 函式庫製作的文字介面小遊戲。
+                專案以 Stardew Valley 的釣魚機制作為參考，玩家需要透過鍵盤控制釣鉤位置，
+                讓魚維持在捕捉範圍內，並累積進度條直到成功捕獲。
+            </p>
+
+            <p>
+                遊戲內容包含主選單、操作教學、魚類圖鑑、隨機魚種、捕捉成功與失敗判定等功能。
+                透過這個專案，我練習了 Assembly 的流程控制、鍵盤輸入、文字畫面輸出、
+                變數狀態管理與簡單的遊戲迴圈設計。
+            </p>
+
+            <div class="tag-container">
+                <span class="tag">Assembly</span>
+                <span class="tag">Irvine32</span>
+                <span class="tag">Game</span>
+                <span class="tag">Console UI</span>
+                <span class="tag">Keyboard Input</span>
+            </div>
+
+            <div class="modal-link-container">
+                <a href="https://github.com/Vincenttainan/NCU_assemblyProject" target="_blank" class="modal-link">
+                    查看 GitHub
+                </a>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p>© 2026 姚政彣. All Rights Reserved.</p>

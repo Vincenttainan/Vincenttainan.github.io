@@ -21,7 +21,10 @@ body {
     border-left: 6px solid #93c5fd;
 }
 .section h3 a {
-    color: #f9fafb;
+    color: #93c5fd;
+}
+.section h3 a:hover {
+    color: #bfdbfe;
 }
 
 .work {
@@ -89,4 +92,57 @@ footer {
 }
 .theme-icon-night{
     color: #93c5fd;
+}
+
+.tag {
+    background-color: #374151;
+    color: #93c5fd;
+}
+
+.modal-content {
+    background-color: #1f2937;
+    color: #eeeeee;
+}
+
+.modal-close {
+    background-color: #374151;
+    color: #f9fafb;
+}
+
+.modal-close:hover {
+    background-color: #4b5563;
+}
+
+.modal-link {
+    background-color: #374151;
+    color: #f9fafb;
+}
+
+.modal-link:hover {
+    background-color: #4b5563;
+}
+
+.status-done {
+    background-color: #14532d;
+    color: #bbf7d0;
+}
+
+.status-updating {
+    background-color: #075985;
+    color: #bae6fd;
+}
+
+.status-learning {
+    background-color: #78350f;
+    color: #fde68a;
+}
+
+.status-developing {
+    background-color: #4c1d95;
+    color: #ddd6fe;
+}
+
+.status-dead {
+    background-color: #7f1d1d;
+    color: #fecaca;
 }
