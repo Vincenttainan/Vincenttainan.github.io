@@ -1,0 +1,78 @@
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+.navbar,
+.profile-card,
+.section {
+    background-color: white;
+}
+.section h2 {
+    color: #222;
+    border-left: 6px solid #4a90e2;
+}
+.section h3 a {
+    color: #222;
+}
+
+.work {
+    border-left: 4px solid #7b61ff;
+}
+
+.hero {
+    background: linear-gradient(135deg, #4a90e2, #7b61ff);
+}
+
+.logo,
+.subtitle,
+.card h3 {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #4a90e2;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.logo:hover {
+    color: #357abd;
+}
+.profile-card a {
+    color: #4a90e2;
+}
+.profile-card a:hover {
+    color: #357abd;
+}
+
+.nav-links a {
+    color: #4a90e2;
+}
+.nav-links a:hover {
+    color: #357abd;
+}
+
+.theme-btn,
+.theme-btn-change-bw,
+.profile-card button {
+    background-color: #4a90e2;
+    color: white;
+}
+.theme-btn-change-bw:hover,
+.profile-card button:hover {
+    background-color: #357abd;
+}
+
+
+.card {
+    background-color: #f4f6f8;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+}
+
+.link-card {
+    background-color: #f4f6f8;
+    color: #4a90e2;
+}

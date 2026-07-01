@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Vincenttainan</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link id="theme-style" rel="stylesheet" href="css/theme_b.css">
+</head>
+<body id="top">
+    <nav class="navbar">
+        <a href="#top" class="logo">Vincenttainan</a>
+
+        <div class="nav-links">
+            <a href="#about">關於我</a>
+            <a href="#skills">技能</a>
+            <a href="#works">作品</a>
+            <a href="#contact">連結</a>
+            <button class="theme-btn-change-bw" onclick="toggleTheme()">
+                切換日間模式
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="profile-card">
+            <img src="assets/images/me.png" alt="個人照片" class="avatar">
+
+            <h1>姚政彣</h1>
+
+            <p class="subtitle">
+                <!--國立臺南第一高級中學<br>-->
+                <a href="https://www.csie.ncu.edu.tw/" target="_blank">
+                    國立中央大學 資訊工程學系
+                </a>
+            </p>
+
+            <p class="intro">
+                一個不太知道自己能幹嘛的大學生
+            </p>
+
+            <button class="theme-btn" onclick="showMessage()">我猜是一個按鈕</button>
+
+            <!--
+            <button class="theme-btn-change-bw" onclick="toggleTheme()">
+                切換夜覽模式
+            </button>
+            -->
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <h2>關於我</h2>
+            <p>
+                我是姚政彣，目前就讀於中央大學資工系
+            </p>
+            <p>
+                這個網站是我第一個從零開始製作的網站，目前用來整理筆記、專案與練習作品
+            </p>
+            <p>
+                雖然目前還在邊做邊學，但希望它之後可以慢慢長成一個完整的作品集
+            </p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>我的技能</h2>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>C++</h3>
+                    <p>具備基礎程式設計能力<br>對演算法、資料結構有基本認知</p>
+                </div>
+
+                <div class="card">
+                    <h3>Python</h3>
+                    <p>大三專題好像似乎要寫 AI<br>不知道能力夠不夠</p>
+                </div>
+
+                <div class="card">
+                    <h3>HTML / CSS / JS</h3>
+                    <p>正在學習前端網頁開發<br>能力完全土豆</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="works" class="section">
+            <h2>作品 / 經歷</h2>
+
+            <div class="work">
+                <h3>
+                    <a href="https://github.com/Vincenttainan/ProgramNote" target="_blank">
+                        程式筆記：語法、解題紀錄
+                    </a>
+                </h3>
+                <p>
+                    語法包含 : C++, Python, Java, Assembly<br>
+                    題解包含 : LeetCode, Toj
+                </p>
+            </div>
+            <div class="work">
+                <h3>
+                    <a href="https://github.com/Vincenttainan/NCU_assemblyProject" target="_blank">
+                        組合語言專案 The Fishing Game
+                    </a>
+                </h3>
+                <p>
+                    使用 Assembly, Irvine32 的文字介面小遊戲<br>
+                    模仿 stardew valley 的釣魚機制
+                </p>
+            </div>
+
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>連結</h2>
+
+            <div class="link-container">
+                <a href="https://github.com/Vincenttainan" target="_blank" class="link-card">
+                    GitHub
+                </a>
+
+                <a href="mailto:vincent.tainan888@gmail.com" class="link-card">
+                    Email
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 姚政彣. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

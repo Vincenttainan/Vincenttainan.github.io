@@ -1,0 +1,77 @@
+body {
+    background-color: #121212;
+    color: #eeeeee;
+}
+
+.navbar,
+.profile-card,
+.section {
+    background-color: #1f2937;
+}
+.section h2 {
+    color: #f9fafb;
+    border-left: 6px solid #93c5fd;
+}
+.section h3 a {
+    color: #f9fafb;
+}
+
+.work {
+    border-left: 4px solid #7b61ff;
+}
+
+.hero {
+    background: linear-gradient(135deg, #111827, #312e81);
+}
+
+.logo,
+.subtitle,
+.card h3 {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: #93c5fd;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.logo:hover {
+    color: #bfdbfe;
+}
+.profile-card a {
+    color: #93c5fd;
+}
+.profile-card a:hover {
+    color: #bfdbfe;
+}
+
+.nav-links a {
+    color: #93c5fd;
+}
+.nav-links a:hover {
+    color: #bfdbfe;
+}
+
+.theme-btn,
+.theme-btn-change-bw,
+.profile-card button {
+    background-color: #374151;
+    color: #f9fafb;
+}
+.theme-btn-change-bw:hover,
+.profile-card button:hover {
+    background-color: #4b5563;
+}
+
+.card {
+    background-color: #374151;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+}
+
+.link-card {
+    background-color: #374151;
+    color: #93c5fd;
+}
