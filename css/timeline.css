@@ -1,0 +1,137 @@
+.timeline {
+    position: relative;
+    margin-top: 24px;
+    padding-left: 24px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    border-radius: 999px;
+
+    transition:
+        background-color 0.8s ease,
+        box-shadow 0.8s ease;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 28px;
+    padding-left: 24px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: 14px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+    transition:
+        background-color 0.8s ease,
+        box-shadow 0.8s ease;
+}
+
+.timeline-date {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: bold;
+
+    transition:
+        background-color 0.8s ease,
+        color 0.8s ease;
+}
+
+.timeline-card {
+    padding: 20px 22px;
+    border-radius: 16px;
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.8s ease,
+        color 0.8s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-4px);
+}
+
+.timeline-card h3 {
+    margin: 0 0 8px;
+    transition: color 0.8s ease;
+}
+
+.timeline-summary,
+.timeline-detail {
+    margin: 0;
+    line-height: 1.8;
+}
+
+.timeline-summary {
+    transition: color 0.8s ease;
+}
+
+.timeline-detail {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        margin-top 0.3s ease,
+        color 0.8s ease;
+}
+
+.timeline-card:hover .timeline-detail {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.timeline-card {
+    cursor: pointer;
+}
+
+.work-title-text {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 18px;
+    }
+
+    .timeline-item {
+        padding-left: 20px;
+    }
+
+    .timeline-item::before {
+        left: -20px;
+    }
+
+    .timeline-card {
+        padding: 18px 16px;
+    }
+
+    .timeline-card:hover {
+        transform: none;
+    }
+
+    .timeline-detail {
+        max-height: none;
+        opacity: 1;
+        margin-top: 10px;
+    }
+}

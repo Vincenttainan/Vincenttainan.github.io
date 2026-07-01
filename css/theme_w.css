@@ -27,10 +27,6 @@ body {
     color: #357abd;
 }
 
-.work {
-    border-left: 4px solid #7b61ff;
-}
-
 .hero::before {
     opacity: 0;
 }
@@ -72,7 +68,6 @@ body {
 .profile-card button:hover {
     background-color: #357abd;
 }
-
 
 .card {
     background-color: #f4f6f8;
@@ -146,4 +141,35 @@ footer {
 .status-dead {
     background-color: #fee2e2;
     color: #991b1b;
+}
+
+.timeline::before {
+    background-color: #dbeafe;
+}
+
+.timeline-item::before {
+    background-color: #4a90e2;
+    box-shadow: 0 0 0 4px #eaf2ff;
+}
+
+.timeline-date {
+    background-color: #eaf2ff;
+    color: #4a90e2;
+}
+
+.timeline-card {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+.timeline-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.work-title-text {
+    color: #4a90e2;
+}
+
+.timeline-card:hover .work-title-text {
+    color: #357abd;
 }

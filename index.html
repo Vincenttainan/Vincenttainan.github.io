@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/footer.css">
     
     <link rel="preload" href="css/theme_w.css" as="style">
@@ -21,8 +22,8 @@
         <div class="nav-links">
             <a href="#about">關於我</a>
             <a href="#skills">技能</a>
-            <a href="#works">作品</a>
             <a href="#learning">學習中</a>
+            <a href="#timeline">歷程</a>
             <a href="#contact">連結</a>
             <div class="theme-switch-wrapper">
                 <span class="theme-icon-day">☀︎</span>
@@ -55,19 +56,6 @@
             </p>
 
             <button class="theme-btn" onclick="showMessage()">我猜是一個按鈕</button>
-
-            <!--
-            <div class="theme-switch-wrapper">
-                <span class="theme-icon-day">☀︎</span>
-
-                <label class="theme-switch">
-                    <input type="checkbox" class="theme-checkbox" onchange="toggleTheme()" checked="true">
-                    <span class="theme-slider"></span>
-                </label>
-
-                <span class="theme-icon-night">☾</span>
-            </div>
-            -->
         </div>
     </header>
 
@@ -106,56 +94,6 @@
             </div>
         </section>
 
-        <section id="works" class="section">
-            <h2>作品 / 經歷</h2>
-
-            <div class="work">
-                <h3 class="work-title">
-                    <a href="javascript:void(0)" onclick="openModal('programNoteModal')">
-                        程式筆記：語法、解題紀錄
-                    </a>
-
-                    <span class="status status-updating">持續更新</span>
-                </h3>
-
-                <p>
-                    這是我用來整理程式學習過程的筆記，包含語法、觀念整理與解題紀錄
-                </p>
-
-                <div class="tag-container">
-                    <span class="tag">C++</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">Java</span>
-                    <span class="tag">Assembly</span>
-                    <span class="tag">Notes</span>
-                    <span class="tag">Solutions</span>
-                </div>
-            </div>
-            
-            <div class="work">
-                <h3 class="work-title">
-                    <a href="javascript:void(0)" onclick="openModal('fishingGameModal')">
-                        組合語言專案 The Fishing Game
-                    </a>
-
-                    <span class="status status-done">已完成</span>
-                </h3>
-
-                <p>
-                    使用 Assembly 與 Irvine32 製作的文字介面小遊戲，模仿 Stardew Valley 的釣魚機制
-                </p>
-
-                <div class="tag-container">
-                    <span class="tag">Assembly</span>
-                    <span class="tag">Irvine32</span>
-                    <span class="tag">Project</span>
-                    <span class="tag">Game</span>
-                    <span class="tag">Console UI</span>
-                </div>
-            </div>
-
-        </section>
-        
         <section id="learning" class="section">
             <h2>目前學習中</h2>
 
@@ -173,6 +111,101 @@
                 <div class="card">
                     <h3>Python / AI</h3>
                     <p>準備將 Python 應用在專題與資料處理相關任務</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="section">
+            <h2>作品與學習歷程</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2026 / 07</span>
+
+                    <div class="work">
+                        <div class="timeline-card" onclick="openModal('personalPortWebModal')">
+                            <h3 class="work-title">
+                                <span class="work-title-text">個人作品集網站</span>
+                                <span class="status status-developing">開發中</span>
+                            </h3>
+
+                            <div class="tag-container">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive Design</span>
+                                <span class="tag">GitHub Pages</span>
+                            </div>
+
+                            <p class="timeline-summary">
+                                使用 HTML、CSS 與 JavaScript 從零開始製作個人作品集網站。
+                            </p>
+
+                            <p class="timeline-detail">
+                                練習導覽列、響應式排版、日夜模式切換、Modal 彈出視窗、作品狀態標籤、技術標籤、時間軸排版與 GitHub Pages 部署。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2026 / 03</span>
+
+                    <div class="work">
+                        <div class="timeline-card" onclick="openModal('programNoteModal')">
+                            <h3 class="work-title">
+                                <span class="work-title-text">程式筆記：語法、解題紀錄</span>
+                                <span class="status status-updating">持續更新</span>
+                            </h3>
+
+                            <div class="tag-container">
+                                <span class="tag">C++</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">Assembly</span>
+                                <span class="tag">Notes</span>
+                                <span class="tag">Solutions</span>
+                            </div>
+
+                            <p class="timeline-summary">
+                                持續整理語法筆記與解題紀錄。
+                            </p>
+
+                            <p class="timeline-detail">
+                                內容包含 C++、Python、Java、Assembly 等語法紀錄，
+                                以及 LeetCode、TOJ 等平台的解題練習。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-date">2025 / 12</span>
+
+                    <div class="work">
+                        <div class="timeline-card" onclick="openModal('fishingGameModal')">
+                            <h3 class="work-title">
+                                <span class="work-title-text">組合語言專案 The Fishing Game</span>
+                                <span class="status status-done">已完成</span>
+                            </h3>
+
+                            <div class="tag-container">
+                                <span class="tag">Assembly</span>
+                                <span class="tag">Irvine32</span>
+                                <span class="tag">Project</span>
+                                <span class="tag">Game</span>
+                                <span class="tag">Console UI</span>
+                            </div>
+
+                            <p class="timeline-summary">
+                                使用 Assembly 製作文字介面釣魚小遊戲。
+                            </p>
+
+                            <p class="timeline-detail">
+                                使用 Assembly 與 Irvine32 製作小遊戲，練習鍵盤輸入、文字畫面輸出、流程控制、狀態管理與簡單遊戲迴圈設計。
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -266,6 +299,46 @@
 
             <div class="modal-link-container">
                 <a href="https://github.com/Vincenttainan/NCU_assemblyProject" target="_blank" class="modal-link">
+                    查看 GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="personalPortWebModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('personalPortWebModal')">
+                X
+            </button>
+
+            <h2 class="work-title">
+                個人作品集網站
+                <span class="status status-developing">開發中</span>
+            </h2>
+
+            <p>
+                這是我第一個從零開始製作的個人作品集網站，主要用來整理自己的程式筆記、
+                專案作品與學習歷程。網站使用 HTML、CSS 與 JavaScript 製作，並透過
+                GitHub Pages 進行部署。
+            </p>
+
+            <p>
+                在製作過程中，我練習了固定導覽列、響應式排版、日夜模式切換、
+                Modal 彈出視窗、作品狀態標籤、技術標籤、時間軸版面與主題顏色切換等功能。
+                這個作品也作為我持續學習前端網頁開發的實作紀錄。
+            </p>
+
+            <div class="tag-container">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Responsive Design</span>
+                <span class="tag">GitHub Pages</span>
+                <span class="tag">Portfolio</span>
+            </div>
+
+            <div class="modal-link-container">
+                <a href="https://github.com/Vincenttainan/Vincenttainan.github.io" target="_blank" class="modal-link">
                     查看 GitHub
                 </a>
             </div>

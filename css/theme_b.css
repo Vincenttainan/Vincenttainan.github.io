@@ -27,10 +27,6 @@ body {
     color: #bfdbfe;
 }
 
-.work {
-    border-left: 4px solid #7b61ff;
-}
-
 .hero::before {
     opacity: 1;
 }
@@ -95,7 +91,7 @@ footer {
 }
 
 .tag {
-    background-color: #374151;
+    background-color: #2f3a4a;
     color: #93c5fd;
 }
 
@@ -145,4 +141,35 @@ footer {
 .status-dead {
     background-color: #7f1d1d;
     color: #fecaca;
+}
+
+.timeline::before {
+    background-color: #374151;
+}
+
+.timeline-item::before {
+    background-color: #93c5fd;
+    box-shadow: 0 0 0 4px #1f2937;
+}
+
+.timeline-date {
+    background-color: #374151;
+    color: #93c5fd;
+}
+
+.timeline-card {
+    background-color: #374151;
+    color: #eeeeee;
+}
+
+.timeline-card:hover {
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.06);
+}
+
+.work-title-text {
+    color: #93c5fd;
+}
+
+.timeline-card:hover .work-title-text {
+    color: #bfdbfe;
 }
