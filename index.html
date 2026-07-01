@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    
+    <link rel="preload" href="css/theme_w.css" as="style">
     <link id="theme-style" rel="stylesheet" href="css/theme_b.css">
 </head>
 <body id="top">
@@ -21,9 +22,16 @@
             <a href="#skills">技能</a>
             <a href="#works">作品</a>
             <a href="#contact">連結</a>
-            <button class="theme-btn-change-bw" onclick="toggleTheme()">
-                切換日間模式
-            </button>
+            <div class="theme-switch-wrapper">
+                <span class="theme-icon-day">☀︎</span>
+
+                <label class="theme-switch">
+                    <input type="checkbox" class="theme-checkbox" onchange="toggleTheme()" checked="true">
+                    <span class="theme-slider"></span>
+                </label>
+
+                <span class="theme-icon-night">☾</span>
+            </div>
         </div>
     </nav>
 
@@ -47,9 +55,16 @@
             <button class="theme-btn" onclick="showMessage()">我猜是一個按鈕</button>
 
             <!--
-            <button class="theme-btn-change-bw" onclick="toggleTheme()">
-                切換夜覽模式
-            </button>
+            <div class="theme-switch-wrapper">
+                <span class="theme-icon-day">☀︎</span>
+
+                <label class="theme-switch">
+                    <input type="checkbox" class="theme-checkbox" onchange="toggleTheme()" checked="true">
+                    <span class="theme-slider"></span>
+                </label>
+
+                <span class="theme-icon-night">☾</span>
+            </div>
             -->
         </div>
     </header>

@@ -10,3 +10,28 @@ body {
     margin: 0;
     font-family: Arial, "Microsoft JhengHei", sans-serif;
 }
+
+body,
+.navbar,
+.profile-card,
+.section,
+.card,
+footer,
+.link-card,
+.theme-btn,
+.theme-btn-change-bw,
+.logo,
+.subtitle,
+.intro,
+.nav-links a,
+.card h3,
+.section h2,
+.section h3 a,
+.work,
+.theme-icon {
+    transition:
+        background-color 0.8s ease,
+        color 0.8s ease,
+        border-color 0.8s ease,
+        box-shadow 0.8s ease;
+}

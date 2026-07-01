@@ -20,8 +20,8 @@ body {
     border-left: 4px solid #7b61ff;
 }
 
-.hero {
-    background: linear-gradient(135deg, #111827, #312e81);
+.hero::before {
+    opacity: 1;
 }
 
 .logo,
@@ -73,5 +73,12 @@ footer {
 
 .link-card {
     background-color: #374151;
+    color: #93c5fd;
+}
+
+.theme-icon-day {
+    color: #374151;
+}
+.theme-icon-night{
     color: #93c5fd;
 }

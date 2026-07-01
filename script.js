@@ -4,19 +4,19 @@ function showMessage() {
 
 function toggleTheme() {
     const themeLink = document.getElementById("theme-style");
-    const themeButtons = document.querySelectorAll(".theme-btn-change-bw");
+    const checkboxes = document.querySelectorAll(".theme-checkbox");
 
     if (themeLink.getAttribute("href") === "css/theme_w.css") {
         themeLink.setAttribute("href", "css/theme_b.css");
 
-        themeButtons.forEach(function(btn) {
-            btn.textContent = "切換日間模式";
+        checkboxes.forEach(function(checkbox) {
+            checkbox.checked = true;
         });
     } else {
         themeLink.setAttribute("href", "css/theme_w.css");
 
-        themeButtons.forEach(function(btn) {
-            btn.textContent = "切換夜覽模式";
+        checkboxes.forEach(function(checkbox) {
+            checkbox.checked = false;
         });
     }
 }
