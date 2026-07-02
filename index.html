@@ -55,7 +55,15 @@
                 一個不太知道自己能幹嘛的大學生
             </p>
 
-            <button class="theme-btn" onclick="showMessage()">我猜是一個按鈕</button>
+            <div class="hero-btn-group">
+                <button class="theme-btn" onclick="openModal('resumeModal')">
+                    查看履歷
+                </button>
+
+                <button class="theme-btn" onclick="location.href='#timeline'">
+                    查看作品
+                </button>
+            </div>
         </div>
     </header>
 
@@ -141,6 +149,32 @@
     </main>
 
     <div id="modalContainer"></div>
+
+    <div id="resumeModal" class="modal">
+        <div class="modal-content resume-modal-content">
+            <button class="modal-close" onclick="closeModal('resumeModal')">
+                X
+            </button>
+
+            <h2>履歷</h2>
+
+            <div class="resume-preview">
+                <iframe src="assets/files/resume.pdf">
+                    你的瀏覽器無法預覽 PDF，請使用下方按鈕下載履歷。
+                </iframe>
+            </div>
+
+            <div class="modal-link-container resume-link-group">
+                <a href="assets/files/resume.pdf" target="_blank" class="modal-link">
+                    新分頁開啟
+                </a>
+
+                <a href="assets/files/resume.pdf" download class="modal-link">
+                    下載履歷
+                </a>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <p>© 2026 姚政彣. All Rights Reserved.</p>

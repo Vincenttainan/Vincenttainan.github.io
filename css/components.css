@@ -177,6 +177,14 @@
 <span class="status status-dead">停止維護</span>
 */
 
+.hero-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
 @media (max-width: 768px) {
     .profile-card {
         padding: 32px 24px;
