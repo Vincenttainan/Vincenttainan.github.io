@@ -124,8 +124,8 @@ function renderWorks() {
                     </div>
 
                     <div class="modal-link-container">
-                        <a href="${work.github}" target="_blank" class="modal-link">
-                            查看 GitHub
+                        <a href="${work.link}" target="_blank" class="modal-link">
+                            ${work.linkName}
                         </a>
                     </div>
                 </div>

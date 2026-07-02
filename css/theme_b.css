@@ -143,6 +143,16 @@ footer {
     color: #fecaca;
 }
 
+.status-studying {
+    background-color: #1e3a8a;
+    color: #bfdbfe;
+}
+
+.status-graduated {
+    background-color: #581c87;
+    color: #f3e8ff;
+}
+
 .timeline::before {
     background-color: #374151;
 }

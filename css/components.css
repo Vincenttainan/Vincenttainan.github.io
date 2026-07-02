@@ -169,13 +169,12 @@
         color 0.8s ease;
 }
 
-/*
-<span class="status status-updating">持續更新</span>
-<span class="status status-done">已完成</span>
-<span class="status status-learning">學習中</span>
-<span class="status status-developing">開發中</span>
-<span class="status status-dead">停止維護</span>
-*/
+.timeline-card .status-studying,
+.timeline-card .status-graduated {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
 
 .hero-btn-group {
     display: flex;
