@@ -52,3 +52,86 @@ document.addEventListener("keydown", function(event) {
         }
     }
 });
+
+function renderWorks() {
+    const timelineList = document.getElementById("timelineList");
+    const modalContainer = document.getElementById("modalContainer");
+
+    if (!timelineList || !modalContainer) {
+        return;
+    }
+
+    timelineList.innerHTML = "";
+    modalContainer.innerHTML = "";
+
+    works.forEach(work => {
+        const timelineTagsHTML = work.tags
+            .slice(0, 6)
+            .map(tag => `<span class="tag">${tag}</span>`)
+            .join("");
+
+        const modalTagsHTML = work.tags
+            .map(tag => `<span class="tag">${tag}</span>`)
+            .join("");
+
+        const modalParagraphsHTML = work.modalParagraphs
+            .map(paragraph => `<p>${paragraph}</p>`)
+            .join("");
+
+        timelineList.innerHTML += `
+            <div class="timeline-item">
+                <span class="timeline-date">${work.date}</span>
+
+                <div class="work">
+                    <div class="timeline-card" onclick="openModal('${work.id}')">
+                        <h3 class="work-title">
+                            <span class="work-title-text">${work.title}</span>
+                            <span class="status ${work.statusClass}">${work.statusText}</span>
+                        </h3>
+
+                        <div class="tag-container">
+                            ${timelineTagsHTML}
+                        </div>
+
+                        <p class="timeline-summary">
+                            ${work.summary}
+                        </p>
+
+                        <p class="timeline-detail">
+                            ${work.detail}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        modalContainer.innerHTML += `
+            <div id="${work.id}" class="modal">
+                <div class="modal-content">
+                    <button class="modal-close" onclick="closeModal('${work.id}')">
+                        X
+                    </button>
+
+                    <h2 class="work-title">
+                        ${work.title}
+                        <span class="status ${work.statusClass}">${work.statusText}</span>
+                    </h2>
+
+                    ${modalParagraphsHTML}
+
+                    <div class="tag-container">
+                        ${modalTagsHTML}
+                    </div>
+
+                    <div class="modal-link-container">
+                        <a href="${work.github}" target="_blank" class="modal-link">
+                            查看 GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+}
+
+renderWorks();
