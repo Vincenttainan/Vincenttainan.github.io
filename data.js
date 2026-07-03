@@ -24,8 +24,8 @@ const works = [
         id: "personalPortWebModal",
         date: "2026 / 07",
         title: "個人作品集網站",
-        statusText: "開發中",
-        statusClass: "status-developing",
+        statusText: "持續更新",
+        statusClass: "status-updating",
         tags: [
             "HTML",
             "CSS",
@@ -42,6 +42,30 @@ const works = [
         ],
         linkName: "github",
         link: "https://github.com/Vincenttainan/Vincenttainan.github.io"
+    },
+    {
+        id: "personalSiteGeneratorModal",
+        date: "2026 / 07",
+        title: "個人網頁視覺化生成器",
+        statusText: "開發中",
+        statusClass: "status-developing",
+        tags: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "JSZip",
+            "Web Tool",
+            "Generator"
+        ],
+        summary: "使用 HTML、CSS 與 JavaScript 製作的個人網頁視覺化生成工具。",
+        detail: "使用者可以輸入姓名、身分、自我介紹與技能，並即時預覽個人網頁效果，同時調整背景、卡片、文字與技能標籤顏色，最後下載成可獨立使用的 ZIP 網頁檔案。",
+        modalParagraphs: [
+            "個人網頁視覺化生成器是一個使用 HTML、CSS 與 JavaScript 製作的前端工具，目標是讓使用者不需要手動撰寫網頁，也能透過表單輸入快速產生個人介紹頁面。",
+            "專案功能包含姓名、身分、自我介紹與技能欄位輸入，右側即時預覽個人網頁結果，並支援背景顏色、卡片顏色、文字顏色、技能標籤顏色與字體大小調整。",
+            "在互動功能上，專案實作了可拖曳的調色 Modal、色票選擇、手動輸入色碼、即時同步預覽，以及透過 JSZip 將產生的 HTML、CSS、JavaScript 打包下載成 ZIP 檔。透過這個專案，我練習了 DOM 操作、表單事件處理、狀態管理、即時渲染與前端檔案產生流程。"
+        ],
+        linkName: "查看 GitHub",
+        link: "https://github.com/Vincenttainan/personal-site-generator"
     },
     {
         id: "programNoteModal",
